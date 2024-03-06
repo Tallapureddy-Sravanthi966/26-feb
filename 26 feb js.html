@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+
+            h1{
+                color:cadetblue;
+                text-align: center;
+
+            }
+            body{
+
+                background-image: url(https://wallup.net/wp-content/uploads/2018/09/30/117405-trees-trees-creative-nature-green.jpg);
+                background-attachment: cover;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <h1>User can Register AND See the details</h1>
+
+     
+       
+
+        <script>
+          
+        
+        var a=document.createElement("button")
+        a.setAttribute("style","background-color:black; color:aqua; width:300px; height:50px; display:block; margin-left:500px;margin-top:200px;font-size:20px")
+        a.innerText="Register";
+        document.body.appendChild(a);
+        a.addEventListener("click",name1);
+        
+        
+        function name1(){
+            var name=prompt("enter username");
+            var password=prompt("enter password");
+            var email=prompt("enter email")
+            var DOB=prompt("enter Date of birth")
+            var mothername=prompt("enter the mother's name")
+            localStorage.setItem("Username",name)
+            localStorage.setItem("Password",password) 
+            localStorage.setItem("Email",email)
+            localStorage.setItem("DOB",DOB)
+            localStorage.setItem("Mother'sname",mothername)          
+        };
+        
+       
+        var b=document.createElement("button");
+        b.setAttribute("style","background-color:black; color:aqua; width:300px; height:50px; display:block; margin-top:200px;margin-left:500px;font-size:20px")
+        b.innerText="See your details";
+        document.body.appendChild(b);
+        b.addEventListener("click",name2);
+        
+        
+        function name2(){
+            window.location.assign("./details.html");
+         };
+
+
+
+        
+       
+
+
+
+        
+       
+    </script>
+
+           
+
+            <!-- var a=document.createElement("button");
+            a.innerText("see details");
+            document.body.appendChild(a);
+            a.addEventListener("click",name2);
+
+            function name2(){
+
+
+            window.location.assign("./details.html");
+
+
+            }
+           
+       -->
+
+        </script>
+    </body>
+</html>
